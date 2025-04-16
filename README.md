@@ -1,63 +1,71 @@
-📩 SMS Spam Detection
-A machine learning project to classify SMS messages as spam or ham (not spam) using natural language processing (NLP) techniques.
+# 📩 SMS Spam Detection
 
-👥 Collaborators
-Utkarsh Vataliya
-Smit Soni
+A machine learning project to classify SMS messages as **spam** or **ham (not spam)** using natural language processing (NLP) techniques.
 
-📌 Project Overview
+---
+
+## 👥 Collaborators
+
+- [Utkarsh Vataliya](https://www.linkedin.com/in/utkarsh-vataliya)  
+- [Smit Soni](https://www.linkedin.com/in/smit781)
+
+---
+
+## 📌 Project Overview
+
 This project aims to build an SMS spam classifier using traditional NLP techniques and machine learning algorithms. The model learns to distinguish spam messages from legitimate ones using a labeled dataset of SMS messages.
 
-📂 Dataset
-Source: UCI SMS Spam Collection Dataset
+---
 
-Format: CSV file with two columns:
+## 📂 Dataset
 
-label: spam or ham
+- **Source**: [UCI SMS Spam Collection Dataset](https://archive.ics.uci.edu/ml/datasets/sms+spam+collection)
+- **Format**: CSV file with two columns:
+  - `label`: spam or ham
+  - `message`: text content of the SMS
 
-message: text content of the SMS
+---
 
-⚙️ Tech Stack & Tools
-Language: Python
+## ⚙️ Tech Stack & Tools
 
-Libraries: pandas, scikit-learn, nltk, matplotlib, seaborn
+- **Language**: Python  
+- **Libraries**: `pandas`, `scikit-learn`, `nltk`, `matplotlib`, `seaborn`  
+- **Modeling**: Naive Bayes, Logistic Regression, SVM, etc.  
+- **Notebook**: Jupyter Notebook (`sms_spam_detection.ipynb`)
 
-Modeling: Naive Bayes, Logistic Regression, SVM, etc.
+---
 
-Notebook: Jupyter Notebook (sms_spam_detection.ipynb)
+## 🧠 Approach
 
-🧠 Approach
-Data Cleaning & Preprocessing
+### 🔹 Data Cleaning & Preprocessing
+- Lowercasing  
+- Punctuation removal  
+- Stopword filtering  
+- Stemming  
 
-Lowercasing, punctuation removal, stopword filtering, stemming
+### 🔹 Exploratory Data Analysis (EDA)
+- Spam vs Ham distribution  
+- Common word frequencies  
 
-Exploratory Data Analysis (EDA)
+### 🔹 Text Vectorization
+- Using TF-IDF and CountVectorizer  
 
-Spam vs Ham distribution
+### 🔹 Model Building
+- Tested models: Naive Bayes, Logistic Regression, SVM  
 
-Common word frequencies
+### 🔹 Model Evaluation
+- Accuracy, Precision, Recall, F1-score  
+- Confusion Matrix  
 
-Text Vectorization
+---
 
-Using TF-IDF and CountVectorizer
-
-Model Building
-
-Tested multiple models like Naive Bayes, Logistic Regression, and SVM
-
-Model Evaluation
-
-Accuracy, Precision, Recall, F1-score
-
-Confusion Matrix
-
-### 🤝 Let's Collaborate!
+## 🤝 Let's Collaborate!
 
 We're always open to feedback, suggestions, and collaboration on similar NLP or machine learning projects.
 
 Connect with us on LinkedIn:
 
-- [Utkarsh Vataliya](https://www.linkedin.com/in/utkarsh-vataliya)   
+- [Utkarsh Vataliya](https://www.linkedin.com/in/utkarsh-vataliya)  
 - [Smit Soni](https://www.linkedin.com/in/smit781)
 
-Feel free to reach out — let’s build something cool together!
+Feel free to reach out — let’s build something cool together! 🚀
