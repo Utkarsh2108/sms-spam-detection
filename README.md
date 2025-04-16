@@ -1,56 +1,63 @@
-# sms-spam-detection
-**end-to-end sms-spam-dectection project
-**
-**SMS Spam Classifier
-**
-This repository contains a project aimed at building a machine learning model to classify SMS messages as spam or ham (non-spam). The project involves data preprocessing, exploratory data analysis (EDA), text vectorization, and model building using various machine learning algorithms.
+📩 SMS Spam Detection
+A machine learning project to classify SMS messages as spam or ham (not spam) using natural language processing (NLP) techniques.
 
-**Table of Contents
-**
-Dataset
-Data Cleaning
+👥 Collaborators
+Utkarsh Vataliya
+Smit Soni
+
+📌 Project Overview
+This project aims to build an SMS spam classifier using traditional NLP techniques and machine learning algorithms. The model learns to distinguish spam messages from legitimate ones using a labeled dataset of SMS messages.
+
+📂 Dataset
+Source: UCI SMS Spam Collection Dataset
+
+Format: CSV file with two columns:
+
+label: spam or ham
+
+message: text content of the SMS
+
+⚙️ Tech Stack & Tools
+Language: Python
+
+Libraries: pandas, scikit-learn, nltk, matplotlib, seaborn
+
+Modeling: Naive Bayes, Logistic Regression, SVM, etc.
+
+Notebook: Jupyter Notebook (sms_spam_detection.ipynb)
+
+🧠 Approach
+Data Cleaning & Preprocessing
+
+Lowercasing, punctuation removal, stopword filtering, stemming
+
 Exploratory Data Analysis (EDA)
-Data Preprocessing
+
+Spam vs Ham distribution
+
+Common word frequencies
+
+Text Vectorization
+
+Using TF-IDF and CountVectorizer
+
 Model Building
-Performance Evaluation
-How to Use
-Dataset
-The dataset used in this project is sourced from UCI Machine Learning Repository. It consists of 5572 SMS messages labeled as spam or ham. The dataset is loaded directly from a CSV file.
 
-Data Cleaning
-The initial dataset contained unnecessary columns and duplicate entries. The following steps were performed for cleaning the data:
+Tested multiple models like Naive Bayes, Logistic Regression, and SVM
 
-Dropped columns 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4'.
-Renamed columns 'v1' to 'target' and 'v2' to 'text'.
-Removed duplicate messages.
-Exploratory Data Analysis (EDA)
-Various statistical analyses were conducted to understand the dataset better:
+Model Evaluation
 
-Distribution of messages between spam and ham.
-Analysis of message length, number of words, and number of sentences in spam vs. ham messages.
-Visualization of the most common words in spam and ham messages using word clouds and bar plots.
-Data Preprocessing
-Text data was preprocessed through the following steps:
+Accuracy, Precision, Recall, F1-score
 
-Lowercasing the text.
-Tokenization: Splitting the text into words.
-Removing special characters, stop words, and punctuation.
-Stemming: Reducing words to their root form.
-Model Building
-Several machine learning models were built and evaluated for performance:
+Confusion Matrix
 
-Naive Bayes (MultinomialNB): Known for its effectiveness in text classification tasks.
-Support Vector Classifier (SVC): With sigmoid kernel.
-Logistic Regression (LR)
-Decision Tree Classifier (DT)
-Random Forest Classifier (RF)
-K-Nearest Neighbors (KNN)
-The text data was vectorized using TF-IDF vectorizer with a maximum of 3000 features to convert text into numerical form suitable for model training.
+### 🤝 Let's Collaborate!
 
-Performance Evaluation
-The models were evaluated based on accuracy and precision. The best-performing models were:
+We're always open to feedback, suggestions, and collaboration on similar NLP or machine learning projects.
 
-Multinomial Naive Bayes (MNB)
-Support Vector Classifier (SVC)
-Random Forest Classifier (RF)
-These models were chosen based on their high precision and accuracy scores.
+Connect with us on LinkedIn:
+
+- [Utkarsh Vataliya](https://www.linkedin.com/in/utkarsh-vataliya)   
+- [Smit Soni](https://www.linkedin.com/in/smit781)
+
+Feel free to reach out — let’s build something cool together!
